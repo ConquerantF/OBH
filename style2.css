@@ -1,0 +1,164 @@
+ Body {
+    background: linear-gradient(to right, #E91E63, #F5C16C);
+ }
+
+ .brand {
+   text-align: center;
+ }
+
+ .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+
+.menu-icon {
+  width: 35px;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  Position : fixed ;
+  Top : 0 ;
+  Left : -260px ; /* caché */
+  Width : 250px ;
+  Height : 100% ;
+  Background : white ;
+  Padding-top : 60px ;
+  Box-shadow : 2px 0 20px rgba(0,0,0,0.2) ;
+  Transition : 0.4s ;
+  z-index : 1000 ;
+}
+
+ /* Liens */
+.sidebar a {
+  Display : block ;
+  Padding : 15px 25px ;
+  Text-decoration : none ;
+  Font-size : 18px ;
+  Color : #f6c445 ;
+  Font-weight : bold ;
+}
+
+.sidebar a :hover {
+  Background : #f6c445 ;
+  Color : white ;
+}
+
+/* Bouton fermer */
+.close-btn {
+  Position : absolute ;
+  Top : 15px ;
+  Right : 20px ;
+  Font-size : 30px ;
+  Cursor : pointer ;
+  Color : #f6c445 ;
+}
+
+ /* Active Sidebar */
+.sidebar.active {
+  Left : 0 ;
+}
+
+/* Active Overlay */
+.overlay.active {
+  Display : block ;
+}
+
+ 
+
+  /* LOGO IMAGE */
+  .Logo-img {
+   width: 70px;
+   height: auto;
+   margin-bottom: 8px;
+   
+ }
+
+ .logo-img {
+   Width : 90px ;
+   Border-radius : 50% ;
+   Background : white ;
+   Padding : 8px ;
+ }
+
+ table {
+   border-radius: 12%;
+   background-color: #fff3ec;
+   font-family:'Poppins',sans-serif;
+ }
+
+ Form {
+    max-width: 40%;
+    margin: auto;
+    color: #E91E63;
+ }
+
+ Button {
+   Background : #E91E63 ;
+   Color : white ;
+   Border : none ;
+   Padding : 12px ;
+   Cursor : pointer ;
+   Width : 50% ;
+   Border-radius : 6px ;
+   
+ }
+
+ .simple-map {
+  Text-align : center ;
+  Margin : 20px 0 ;
+}
+
+.simple-map-link {
+  Display : inline-block ;
+}
+
+.simple-map-image {
+  Width : 100% ;
+  Max-width : 600px ;
+  Border-radius : 8px ;
+  Box-shadow : 0 3px 10px rgba(0,0,0,0.2) ;
+}
+
+.simple-map-address {
+  Margin-top : 10px ;
+  Color : #555 ;
+  Font-size : 16px ;
+}
+
+ 
+ .location a :hover {
+   Color : #E91E63 ;
+   Text-decoration : underline ;
+ }
+
+ Footer {
+   Background : #111 ;
+   Color : white ;
+   Text-align : center ;
+   Padding : 15px ;
+ }
+
+ .social-icons {
+   Margin-top : 15px ;
+   Display : flex ;
+   Justify-content : center ;
+   Gap : 20px ;
+ }
+ 
+ .social-icons img {
+   Width : 35px ;
+   Transition : 0.3s ;
+   Cursor : pointer ;
+ }
+ 
+ .social-icons img :hover {
+   Transform : scale(1.2) ;
+ }
+ 
