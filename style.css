@@ -155,7 +155,6 @@ Body {
     Text-align : center ;
   }
   
-  
   .gallery {
     Padding : 40px ;
     Text-align : center ;
@@ -171,8 +170,44 @@ Body {
   .gallery img {
     Width : 250px ;
     Border-radius : 10px ;
+    Cursor : pointer ;
+    Transition : transform 0.3s ;
   }
-  
+  .gallery img :hover {
+  Transform : scale(1.05) ;
+  }
+
+  /* Lightbox */
+#lightbox {
+  Position : fixed ;
+  Top : 0 ;
+  Left : 0 ;
+  Width : 100% ;
+  Height : 100% ;
+  Background : rgba(0,0,0,0.9) ;
+  Display : none ;
+  Justify-content : center ;
+  Align-items : center ;
+  z-index : 9999 ;
+}
+
+#lightbox img {
+  Max-width : 90% ;
+  Max-height : 90% ;
+  Cursor : zoom-in ;
+  Transition : transform 0.3s ;
+}
+
+#close {
+  Position : absolute ;
+  Top : 20px ;
+  Right : 30px ;
+  Font-size : 40px ;
+  Color : white ;
+  Cursor : pointer ;
+}
+
+
   .contact {
     Background : #f9f9f9 ;
     Padding : 40px ;
