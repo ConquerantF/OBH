@@ -24,7 +24,7 @@ Body {
   text-align: center;
 }
 
-.overlay {
+.card-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.45);
@@ -35,9 +35,10 @@ Body {
   align-items: center;
   opacity: 0;
   transition: 0.4s;
+  pointer-events: none;
 }
 
-.service-card:hover .overlay {
+.service-card:hover .card-overlay {
   opacity: 1;
 }
 
@@ -173,7 +174,7 @@ Body {
     Cursor : pointer ;
     Transition : transform 0.3s ;
   }
-  .gallery img :hover {
+  .gallery img:hover {
   Transform : scale(1.05) ;
   }
 
@@ -189,13 +190,20 @@ Body {
   Justify-content : center ;
   Align-items : center ;
   z-index : 9999 ;
+  pointer-events: auto;
 }
+
+#lightbox.active {
+  display: flex;
+}
+
 
 #lightbox img {
   Max-width : 90% ;
   Max-height : 90% ;
   Cursor : zoom-in ;
   Transition : transform 0.3s ;
+  pointer-events: auto;
 }
 
 #close {
@@ -226,7 +234,7 @@ Body {
   
   }
   
-  .btn-appointment :hover {
+  .btn-appointment:hover {
     Background-color : #b38d3a ;
   }
   
@@ -235,7 +243,10 @@ Body {
     Overflow : hidden ;
     Transition : max-height 0.5s ease ;
     Margin-top : 20px ;
-    
+  }
+
+  .form-container.open {
+  max-height: 600px;
   }
   
   .form-container form {
@@ -309,7 +320,12 @@ Body {
     Cursor : pointer ;
   }
   
-  .social-icons img :hover {
+  .social-icons img:hover {
     Transform : scale(1.2) ;
   }
+
+  #lightbox img.zoomed {
+  transform: scale(2);
+  cursor: zoom-out;
+}
   
